@@ -29,8 +29,9 @@ public class TopicManager {
         topic.getSubscribersList().add(s);
 
     }
-    public void unSubscribe() {
-
+    public void unSubscribe(Subscribers s,Topic t1) {
+        Topic topic = topicMap.get(t1.getId());
+        topic.getSubscribersList().remove(s);
     }
 
     public void messageFromPublisher(Topic topic,SubscriberManager subscriberManager, Message message) {

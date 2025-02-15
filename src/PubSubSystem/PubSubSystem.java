@@ -51,5 +51,8 @@ public class PubSubSystem {
 
         pubSubSystem.publisherManager.publishMessageToTopic(pubSubSystem.topicManager,pubSubSystem.subscriberManager,t1,message1);
 
+        pubSubSystem.topicManager.unSubscribe(s1,t1);
+        pubSubSystem.publisherManager.publishMessageToTopic(pubSubSystem.topicManager,pubSubSystem.subscriberManager,t1,message1);
+
     }
 }
