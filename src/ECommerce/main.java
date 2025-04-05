@@ -79,6 +79,7 @@ class Customer {
     String password;
     String address;
     Cart cart;
+    List<Order> orderList;
     List<PaymentStrategy> paymentStrategies;
 
 
